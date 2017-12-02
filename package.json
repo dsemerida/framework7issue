@@ -1,0 +1,59 @@
+{
+  "name": "com.example.hello",
+  "displayName": "poolybeta",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-android": "^6.3.0",
+    "cordova-browser": "^5.0.1",
+    "cordova-plugin-app-event": "^1.2.1",
+    "cordova-plugin-app-version": "^0.1.9",
+    "cordova-plugin-camera": "^2.4.1",
+    "cordova-plugin-compat": "^1.2.0",
+    "cordova-plugin-device": "^1.1.6",
+    "cordova-plugin-dialogs": "^1.3.4",
+    "cordova-plugin-file": "^4.0.0",
+    "cordova-plugin-file-transfer": "^1.6.3",
+    "cordova-plugin-geolocation": "^2.4.3",
+    "cordova-plugin-googlemaps": "^2.1.1",
+    "cordova-plugin-inappbrowser": "^1.7.1",
+    "cordova-plugin-local-notifications": "git+https://github.com/katzer/cordova-plugin-local-notifications.git",
+    "cordova-plugin-market": "git+https://github.com/xmartlabs/cordova-plugin-market.git",
+    "cordova-plugin-whitelist": "^1.3.2",
+    "cordova.plugins.diagnostic": "^3.6.6",
+    "de.appplant.cordova.plugin.local-notification": "https://github.com/katzer/cordova-plugin-local-notifications.git",
+    "npm-git-install": "^0.3.0",
+    "phonegap-plugin-push": "^1.10.5"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-file-transfer": {},
+      "cordova-plugin-camera": {},
+      "phonegap-plugin-push": {
+        "SENDER_ID": "85075801930"
+      },
+      "cordova-plugin-inappbrowser": {},
+      "cordova.plugins.diagnostic": {},
+      "de.appplant.cordova.plugin.local-notification": {},
+      "cordova-plugin-app-version": {},
+      "cordova-plugin-market": {},
+      "cordova-plugin-compat": {},
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-googlemaps": {
+        "API_KEY_FOR_ANDROID": "AIzaSyCct_h2kMoA3K2fRYt_WPwPHWZYnoUJe3Y",
+        "API_KEY_FOR_IOS": "AIzaSyCct_h2kMoA3K2fRYt_WPwPHWZYnoUJe3Y"
+      }
+    },
+    "platforms": [
+      "browser"
+    ]
+  }
+}
