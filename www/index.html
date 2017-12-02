@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="with-statusbar-overlay">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<title>F7 MVC</title>
+		<link rel="stylesheet" href="lib/css/framework7.css">
+		<link rel="stylesheet" href="lib/css/ionicons.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link href="img/favicon.png" rel="shortcut icon">
+		<style type="text/css">
+		li{list-style: none;}
+		 #googlemaps { 
+          height: 100%; 
+          width: 100%; 
+          position:absolute; 
+          top: 0; 
+          left: 0; 
+          z-index: 2222; /* Set z-index to 0 as it will be on a layer below the contact form */
+        }
+	</style>
+	</head>
+	<body>
+
+    <!-- Views-->
+	<div class="views">
+		<div class="view view-main navbar-fixed">
+			
+			<div class="pages">
+				<div data-page="list" class="page">
+					
+
+                    <div class="page-content">
+                        <div class="" id="googlemaps">
+                        					
+				                    	
+											<div class="searchbar-overlay"></div>
+			                        		<div class="navbar">
+												<div class="navbar-inner">
+								                    <div class="left">
+								                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+								                    </div>
+								                    <div class="center sliding contacts-list-header">Contacts</div>
+								                    <div class="right contact-add-link">
+								                        <a href="#" class="link icon-only"><i class="icon icon-plus">+</i></a>
+								                    </div>
+												</div>
+											</div>
+											
+											<div style="position: absolute;top: 10%;z-index: 4444; width: 100%; ">
+												 <!-- Search bar -->
+											
+												  <div class="list-block media-list contacts-list searchbar-found">
+													<div class="list-group">
+						                            	<ul></ul>
+													</div>
+						                        </div>
+						                        <div class="content-block searchbar-not-found">
+						                            Nothing found
+						                        </div>
+											</div>
+											<!-- Search bar overlay-->
+											
+			                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
+<script type="text/javascript" src="lib/lodash.js"></script>
+<script type="text/javascript" src="lib/framework7.js"></script>
+<script type="text/javascript"  src="cordova.js"></script>
+<script data-main="app" src="lib/require.js"></script>

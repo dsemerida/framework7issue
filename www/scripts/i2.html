@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html class="with-statusbar-overlay">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">-->
+
+    <title>The Workshop</title>
+
+    <link href="css/framework7.ios.min.css" rel="stylesheet" />
+    <link href="css/framework7.ios.colors.min.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div class="panel-overlay"></div>
+    <div class="panel panel-left panel-reveal gradientMenu" ng-controller="menuController">
+        <div class="content-block">
+
+            <div class="list-block fontMenu" style="border:hidden;">
+                <ul style="background: transparent;" ng-show="mvisible">
+                    <li class="item-content">
+                        <i class="fa fa-times  fa-lg panel-close"></i>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-title">
+                            <i class="fa fa-envelope-o"></i> Avisos
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-title">
+                            <i class="fa fa-clock-o"></i> Horarios
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-title">
+                            <i class="fa fa-newspaper-o"></i> Noticias
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-title">
+                            <i class="fa fa-cutlery"></i> Menú
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-title">
+                            <i class="fa fa-sticky-note-o"></i> Citas
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-title">
+                            <i class="fa fa-book"></i> Biblioteca Digital
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-title">
+                            <i class="fa fa-calendar"></i> Calendarios
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-title">
+                            <i class="fa fa-medkit"></i> Protocolo de Salud
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-title">
+                            <i class="fa fa-graduation-cap"></i> Reglamento
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-title">
+                            <i class="fa fa-wrench"></i> Mantenimiento
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-title">
+                            <i class="fa fa-paypal"></i> Colegiatura
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-title">
+                            <i class="fa fa-sign-out"></i> Logout
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!--views-->
+    <div class="views">
+        <div class="view view-main">
+            
+            <div class="pages">
+                <div data-page="home" class="page">
+
+                    <div class="page-content">
+                        <div class="content-block">
+                            <p><a href="contact.html">login page</a></p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--<div class="view view-privacidad">
+                    <div class="pages">
+                        <div data-page="privacidad" class="page">
+                            <div class="page-content">
+                                contenido
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+
+            </div>
+        </div>
+
+    </div>
+    <!--end views-->
+    <!--<script src="scripts/platformOverrides.js"></script>-->
+    <script src="scripts/framework7.min.js"></script>
+    <script data-main="app" src="scripts/require.js"></script>
+
+</body>
+</html>
